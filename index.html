@@ -18,13 +18,26 @@
         <li><a href="sobre.html">SOBRE</a></li>
     </ul>
 
-    <!--Cria um input para inserir os produtos-->
-    <input type="text" id="produto" placeholder="Insira o produto">
-    <button onclick="adicionarProduto()">+</button>
-    <!--Cria um botão para limpar o carrinho-->
-    <button onclick="limparCarrinho()">X</button>
-    <!--Insere os produtos em um conteiner-->
-    <div id="carrinho"></div>
+    <center>
+        <h1>LISTA:</h1>
+        <!--Exibe os itens adicionados ao carrinho-->
+        <div class="box" id="carrinho"></div>
+        <div class="textarea">
+            <label for="itens">ADICIONE O ITEM:</label>
+            <br>
+            <input type="text" id="itens" name="itens">
+            <br>
+            <button onclick="adicionarItem()">Adicionar ao carrinho</button>
+            <br>
+            <button onclick="limparCarrinho()">Limpar carrinho</button>
+            <br>
+            <button onclick="salvarCarrinho()">Salvar carrinho</button>
+            <br>
+            <button onclick="carregarCarrinho()">Carregar carrinho</button>
+            <br>
+            <button onclick="limparLista()">Limpar lista</button>
+        </div>
+    </center>
 </body>
 <footer>
     

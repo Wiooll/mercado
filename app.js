@@ -1,16 +1,37 @@
-//Lógica para adicionar os produtos no carrinho
-function adicionarProduto() {
-    var produto = document.getElementById("produto").value;
+// Adiciona um item ao carrinho
+function adicionarItem() {
+    var item = document.getElementById("itens").value;
+    if(item === "") {
+        alert("Erro: Nenhum item foi digitado!");
+        return;
+    }
     var carrinho = document.getElementById("carrinho");
-    var novoProduto = document.createElement("div");
-    novoProduto.classList.add("box");
-    novoProduto.textContent = produto;
-    carrinho.appendChild(novoProduto);
-    document.getElementById("produto").value = "";
+    var novoItem = document.createElement("p");
+    novoItem.textContent = item;
+    carrinho.appendChild(novoItem);
+    console.log("Item adicionado ao carrinho:", item);
 }
 
 //Lógica botão limpar carrinho
 function limparCarrinho() {
     var carrinho = document.getElementById("carrinho");
     carrinho.innerHTML = "";
+}
+
+//Lógica botão salvar carrinho
+function salvarCarrinho() {
+    var carrinho = document.getElementById("carrinho").innerHTML;
+    localStorage.setItem("carrinho", carrinho);
+}
+
+//Lógica botão carregar carrinho
+function carregarCarrinho() {
+    var carrinho = localStorage.getItem("carrinho");
+    document.getElementById("carrinho").innerHTML = carrinho;
+}
+
+//Lógica botão limpar lista
+function limparLista() {
+    localStorage.removeItem("carrinho");
+    document.getElementById("carrinho").innerHTML = "";
 }
