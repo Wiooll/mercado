@@ -1,0 +1,120 @@
+/*Estilo do menu de navegação*/
+ul {
+    list-style-type: none; /*Tira os marcadores da lista*/
+    margin: 0; /*Margem do menu*/
+    padding: 0; /*Preenchimento do menu*/
+    overflow: hidden; /*Esconde o conteudo que ultrapassa a div*/
+    background-color: #333; /*Cor de fundo do menu*/
+    width: 100%; /* Margem do Menu preenche totalmente horizontalmente*/
+    height: 50px; /*Altura do menu*/
+    border-radius: 5px; /*Bordas arredondadas*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra do menu*/
+}
+  
+  li {
+    display: block; /*Ocupa todo o espaco do item*/
+    color: white; /*Cor do texto*/
+    text-align: center; /*Alinha o texto ao centro*/
+    padding: 14px 16px; /*Preenchimento do item*/
+    text-decoration: none; /*Remove a decora o do link*/
+    float: left; /*Flutua o item para a esquerda*/
+    width: 25%; /*Largura do item*/
+    height: 50px; /*Altura do item*/
+    border-radius: 5px; /*Bordas arredondadas*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra do item*/    
+  }
+  
+  li:hover { /*Altera a cor do item ao passar o mouse por cima*/
+    background-color: #111; /*Cor do fundo do item ao passar o mouse por cima*/
+     
+}  
+  li a {
+    display: block; /*Ocupa todo o espaco do item*/
+    color: white; /*Cor do texto*/
+    text-align: center; /*Alinha o texto ao centro*/
+    padding: 14px 16px; /*Preenchimento do item*/
+    text-decoration: none; /*Remove a decora o do link*/
+  }
+  
+  li a:hover { /*Altera a cor do item ao passar o mouse por cima*/
+    background-color: #111; /*Cor do fundo do item ao passar o mouse por cima*/
+}
+
+/*Estilo do corpo do site*/
+body {
+    background-color: #ffffff; /*Cor de fundo do corpo*/
+    font-family: Arial, sans-serif; /*Fonte do corpo*/
+    margin: 0; /*Margem padr o*/
+    padding: 0; /*Preenchimento padr o*/
+  }
+
+/*Estilo do conteudo do site*/
+.content {
+    margin: 200px; /*Margem do conteudo*/
+    padding: 20px; /*Preenchimento do conteudo*/
+    background-color: #ffffff; /*Cor de fundo do conteudo*/
+    align-items: center;
+    border-radius: 5px; /*Bordas arredondadas*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra do conteudo*/
+    text-align: center; /*Alinha o texto ao centro*/
+    width: 80%; /*Largura do conteudo*/
+    height: 80%; /*Altura do conteudo*/
+    max-width: 600px; /*Largura m axima do conteudo*/
+    max-height: 600px; /*Altura m axima do conteudo*/
+    margin: center; /*Alinha o conteudo ao centro*/
+  }
+
+  /*Estilo do input de produtos*/
+input[type="text"] {
+    padding: 20px; /*Preenchimento do input*/
+    display: center; /*Alinha o input lado a lado*/
+    margin: 200px; /*Margem do input*/
+    font-size: 16px; /*Tamanho da fonte*/
+    border-radius: 5px; /*Bordas arredondadas*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra do input*/
+    width: 80%; /*Largura do input*/
+    max-width: 600px; /*Largura maxima do input*/
+  }
+
+/*Estilo da caixa de produtos*/
+.box {
+    background-color: #f2f2f2; /*Cor de fundo da caixa*/
+    padding: 10px; /*Preenchimento da caixa*/
+    margin: 10px; /*Margem da caixa*/
+    border-radius: 5px; /*Bordas arredondadas*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra da caixa*/
+    text-align: center; /*Alinha o texto ao centro*/
+    width: 80%; /*Largura da caixa*/
+    height: 80%; /*Altura da caixa*/
+    max-width: 600px; /*Largura m axima da caixa*/
+    max-height: 600px; /*Altura m axima da caixa*/
+}
+
+/*Estilo do botao de adicionar ao carrinho*/
+button {
+    background-color: #ff0000; /*Cor de fundo do botao*/
+    border: none; /*Sem borda*/
+    color: white; /*Cor do texto*/
+    padding: 10px 20px; /*Preenchimento do botao*/
+    text-align: center; /*Alinha o texto ao centro*/
+    text-decoration: none; /*Sem decoracao*/
+    display: inline-block;  /*Alinha o botao lado a lado*/
+    font-size: 16px; /*Tamanho da fonte*/
+    margin: 4px 2px; /*Margem do botao*/
+    cursor: pointer; /*Muda o cursor ao passar o mouse por cima*/
+    border-radius: 4px; /*Bordas arredondadas*/
+  }
+
+/*Estilo do rodape do site*/
+footer {
+    background-color: #333; /*Cor de fundo do rodape*/
+    color: #fff; /*Cor do texto do rodape*/
+    padding: 10px; /*Preenchimento do rodape*/
+    text-align: center; /*Alinha o texto ao centro*/
+    position: fixed; /*Posicao fixa*/
+    bottom: 0; /*Alinha o rodape ao final*/
+    width: 100%; /*Largura do rodape*/
+    height: 50px; /*Altura do rodape*/
+    border-radius: 5px; /*Bordas arredondadas*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra do rodape*/
+  }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRINHO</title>
+</head>
+<!--Importando CSS-->    
+<link rel="stylesheet" href="styles.css">
+<!--Importando JavaScript-->    
+<script src="app.js"></script>
+<body>
+    <!--Menu de navegação do site -->
+    <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="carrinho.html">CARRINHO</a></li>
+        <li><a href="listas.html">LISTAS SALVAS</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
+    </ul>
+
+    <!--Cria um input para inserir os produtos-->
+    <input type="text" id="produto" placeholder="Insira o produto">
+    <button onclick="adicionarProduto()">+</button>
+    <!--Cria um botão para limpar o carrinho-->
+    <button onclick="limparCarrinho()">X</button>
+    <!--Insere os produtos em um conteiner-->
+    <div id="carrinho"></div>
+</body>
+<footer>
+    
+</footer>
+</html>
