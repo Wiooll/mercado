@@ -1,37 +1,22 @@
-// Adiciona um item ao carrinho
+//Lógica para adicionar itens a lista
 function adicionarItem() {
     var item = document.getElementById("itens").value;
-    if(item === "") {
-        alert("Erro: Nenhum item foi digitado!");
-        return;
-    }
-    var carrinho = document.getElementById("carrinho");
-    var novoItem = document.createElement("p");
+    var lista = document.getElementById("lista");
+    var novoItem = document.createElement("li");            
     novoItem.textContent = item;
-    carrinho.appendChild(novoItem);
-    console.log("Item adicionado ao carrinho:", item);
-}
+    lista.appendChild(novoItem);
+    document.getElementById("itens").value = "";
+    novoItem.addEventListener("click", function() {
+        lista.removeChild(novoItem);
+    }); 
+}   
 
-//Lógica botão limpar carrinho
-function limparCarrinho() {
-    var carrinho = document.getElementById("carrinho");
-    carrinho.innerHTML = "";
-}
-
-//Lógica botão salvar carrinho
-function salvarCarrinho() {
-    var carrinho = document.getElementById("carrinho").innerHTML;
-    localStorage.setItem("carrinho", carrinho);
-}
-
-//Lógica botão carregar carrinho
-function carregarCarrinho() {
-    var carrinho = localStorage.getItem("carrinho");
-    document.getElementById("carrinho").innerHTML = carrinho;
-}
-
-//Lógica botão limpar lista
+//Lógica para limpar a lista
 function limparLista() {
-    localStorage.removeItem("carrinho");
-    document.getElementById("carrinho").innerHTML = "";
+    var lista = document.getElementById("lista");
+    while (lista.firstChild) {
+        lista.removeChild(lista.firstChild);
+    }
 }
+
+//

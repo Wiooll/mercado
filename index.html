@@ -3,43 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARRINHO</title>
+    <title>App</title>
+    <link rel="stylesheet" href="styles.css"> <!--Link para o arquivo CSS--> 
+    <script src="app.js"></script> <!--Link para o arquivo JS-->
 </head>
-<!--Importando CSS-->    
-<link rel="stylesheet" href="styles.css">
-<!--Importando JavaScript-->    
-<script src="app.js"></script>
 <body>
     <!--Menu de navegação do site -->
     <ul>
         <li><a href="index.html">INICIO</a></li>
-        <li><a href="carrinho.html">CARRINHO</a></li>
         <li><a href="listas.html">LISTAS SALVAS</a></li>
         <li><a href="sobre.html">SOBRE</a></li>
     </ul>
-
+<div>
     <center>
-        <h1>LISTA:</h1>
-        <!--Exibe os itens adicionados ao carrinho-->
-        <div class="box" id="carrinho"></div>
+        <!--Exibe os itens adicionados a lista-->
+        <div id="lista"></div>
+        
         <div class="textarea">
             <label for="itens">ADICIONE O ITEM:</label>
             <br>
             <input type="text" id="itens" name="itens">
             <br>
-            <button onclick="adicionarItem()">Adicionar ao carrinho</button>
-            <br>
-            <button onclick="limparCarrinho()">Limpar carrinho</button>
-            <br>
-            <button onclick="salvarCarrinho()">Salvar carrinho</button>
-            <br>
-            <button onclick="carregarCarrinho()">Carregar carrinho</button>
+            <button onclick="adicionarItem()">Adicionar a lista</button>
             <br>
             <button onclick="limparLista()">Limpar lista</button>
         </div>
     </center>
+</div>
 </body>
 <footer>
-    
+  <!--Rodapé do site-->
+  <p>&copy; 2025 WS. Todos os direitos reservados.</p>
 </footer>
 </html>
+

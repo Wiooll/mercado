@@ -6,7 +6,7 @@ ul {
     overflow: hidden; /*Esconde o conteúdo que ultrapassa a div*/
     background-color: #333; /*Cor de fundo do menu*/
     width: 100%; /*Margem do Menu preenche totalmente horizontalmente*/
-    height: 50px; /*Altura do menu*/
+    height: 30px; /*Altura do menu*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra do menu*/
 }
 
@@ -29,20 +29,6 @@ li a:hover { /*Altera a cor do item ao passar o mouse por cima*/
     background-color: #111; /*Cor do fundo do item ao passar o mouse por cima*/
 }
 
-/*Estilo do corpo do site*/
-body {
-    background-color: #ffffff80; /*Cor de fundo do corpo*/
-    display: block;   /*Alinha o corpo ao centro*/
-    font-family: Arial, sans-serif; /*Fonte do corpo*/
-    margin: 0; /*Margem padrão*/
-    padding: 0; /*Preenchimento padrão*/
-}
-
-/*Estilo do conteúdo do site*/
-main {
-    padding: 20px; /*Preenchimento do conteúdo*/
-}
-
 /*Estilo do input de produtos*/
 .textarea {
     padding: 10px; /*Preenchimento do input*/
@@ -58,15 +44,23 @@ main {
     max-width: 600px; /*Largura máxima do input*/
 }
 
-/*Estilo da div do carrinho*/
-.box {
-    background-color: #f2f2f2; /*Cor de fundo da div*/
-    padding: 10px; /*Preenchimento da div*/
-    margin: 10px; /*Margem da div*/
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra da div*/
+/*Estilo da lista de itens*/
+#lista {
+    padding: 10px; /*Preenchimento da lista*/
+    margin: 100px auto; /*Margem da lista*/
+    margin-top: 200px;
+    border: 1px solid #ccc; /*Borda da lista*/
+    background-color: #f2f2f2; /*Cor de fundo da lista*/
+    font-family: Arial, sans-serif; /*Fonte da lista*/
+    font-size: 16px; /*Tamanho da fonte*/
+    border-radius: 5px; /*Bordas arredondadas*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra da lista*/
+    width: 80%; /*Largura da lista*/
+    max-width: 600px; /*Largura máxima da lista*/
+    text-align: center; /*Alinha o texto ao centro*/
 }
 
-/*Estilo do botão de adicionar ao carrinho*/
+/*Estilo do botão de adicionar a lista*/
 button {
     background-color: #007e06; /*Cor de fundo do botão*/
     border: none; /*Sem borda*/
@@ -91,7 +85,7 @@ footer {
     bottom: 0; /*Alinha o rodapé ao final*/
     width: 100%; /*Largura do rodapé*/
     height: 50px; /*Altura do rodapé*/
+    border-top: 1px solid #ccc; /*Borda superior do rodapé*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra do rodapé*/
+
 }
-
-
