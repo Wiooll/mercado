@@ -1,0 +1,50 @@
+/*Página de cadastro*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}    
+
+/*Estilo do formulário de cadastro*/
+form {
+    background-color: #fff;
+    padding: 20px;            
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px; /*Largura do formulário*/
+    max-width: 80%; /*Largura máxima do formulário*/
+    margin: 0 auto; /*Margem automática para centralizar o formulário*/
+}   
+
+/*Estilo dos campos de entrada*/
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+    transition: all 0.3s ease;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    /*Efeito de hover para os campos de entrada*/
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+}

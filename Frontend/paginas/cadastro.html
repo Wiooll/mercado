@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="/Frontend/css/login.css">
+    <link rel="script" href="/servidor/cadastro.js">
+</head>
+<body>
+    <h1>FAÇA SEU CADASTRO</h1>    
+    <center>
+        <div class="login">   
+        <form>
+            <label for="usuário">LOGIN:</label>
+            <input type="text" id="usuário" name="usuário"><br>
+            <label for="senha">SENHA:</label>
+            <input type="password" id="senha" name="senha"><br>
+            <div class="submit-button" onclick="adicionarUsuario()">Cadastrar</div>
+            <script>
+                function adicionarUsuario() {
+                  try {
+                    const loginInput = document.getElementById("usuário");
+                    const senhaInput = document.getElementById("senha");
+
+                    if (!loginInput || !senhaInput) {
+                      alert("Erro interno: Elementos de entrada não encontrados.");
+                      return;
+                    }
+
+                    const login = loginInput.value.trim();
+                    const senha = senhaInput.value.trim();
+
+                    if (!login || !senha) {
+                      alert("Por favor, preencha todos os campos.");
+                      return;
+                    }
+
+                    const xhr = new XMLHttpRequest();
+                    xhr.open("POST", "/adicionar-usuario", true);
+                    xhr.setRequestHeader("Content-Type", "application/json");
+
+                    xhr.onload = function() {
+                      if (xhr.status === 200) {
+                        try {
+                          const response = JSON.parse(xhr.responseText);
+                          alert("Usuário cadastrado com sucesso!");
+                        } catch (error) {
+                          alert("Erro ao processar a resposta: " + error.message);
+                        }
+                      } else if (xhr.status === 400) {
+                        try {
+                          const response = JSON.parse(xhr.responseText);
+                          alert("Erro: " + (response.erro || "Erro desconhecido."));
+                        } catch (error) {
+                          alert("Erro ao processar a resposta: " + error.message);
+                        }
+                      } else {
+                        alert("Ocorreu um erro ao tentar cadastrar o usuário.");
+                      }
+                    };
+
+                    xhr.onerror = function() {
+                      alert("Erro de rede: Não foi possível completar a requisição.");
+                    };
+
+                    xhr.send(JSON.stringify({ login: login, senha: senha }));
+                  } catch (error) {
+                    alert("Erro ao executar a função de cadastro: " + error.message);
+                  }
+                }
+              </script>
+            <br>
+            <a href="login.html" class="cadastro-link">Login</a>
+
+        </form>
+        </div>
+    </center>
+</body>    
+</html>

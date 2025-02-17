@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="/Frontend/css/styles.css"> <!--Link para o arquivo CSS--> 
+    <script src="/Frontend/js/app.js"></script> <!--Link para o arquivo JS-->
+</head>
+<body>
+    <!--Menu de navegação do site -->
+    <ul>
+        <li><a href="/Frontend/paginas/index.html">INICIO</a></li>
+        <li><a href="/Frontend/paginas/listas.html">LISTAS SALVAS</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
+    </ul>
+    <center>
+        <!--Exibe os itens adicionados a lista-->
+        <div class="lista" id="lista"></div>
+        <div class="textarea">
+            <label for="itens">ADICIONE O ITEM:</label>
+            <br>
+            <input type="text" id="itens" name="itens">
+            <br>
+            <button onclick="adicionarItem()">Adicionar a lista</button>
+            <button onclick="limparLista()">Limpar lista</button>
+        </div>
+    </center>
+</body>
+<footer>
+  <!--Rodapé do site-->
+  <p>&copy; 2025 WS. Todos os direitos reservados.</p>
+</footer>
+</html>
+
