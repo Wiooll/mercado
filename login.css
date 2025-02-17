@@ -1,0 +1,55 @@
+h1 {
+    text-align: center; /*Alinha o texto ao centro*/
+    margin-top: 50px; /*Margem superior do texto*/
+    font-size: 36px; /*Tamanho da fonte*/
+    font-family: Arial, sans-serif; /*Fonte do texto*/
+    color: #333; /*Cor do texto*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /*Sombra do texto*/
+    text-transform: uppercase; /*Transforma o texto em maiúsculo*/
+    letter-spacing: 2px; /*Espaço entre as letras*/
+}
+
+/*Campo de Login*/
+input[type="text"], input[type="password"] {
+    width: 20%; /*Largura do input*/
+    padding: 10px; /*Preenchimento do input*/
+    margin: 10px 0; /*Margem do input*/
+    border: 1px solid #ccc; /*Borda do input*/
+    border-radius: 5px; /*Bordas arredondadas*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra do input*/
+    font-size: 16px; /*Tamanho da fonte*/
+    font-family: Arial, sans-serif; /*Fonte do input*/
+    background-color: #f2f2f2; /*Cor de fundo do input*/
+    color: #333; /*Cor do texto do input*/
+    text-align: center; /*Alinha o texto ao centro*/
+    transition: all 0.3s ease; /*Transição para o efeito de hover*/
+    display:flex; /*Exibe o input como flexbox*/
+
+    /*Efeito de hover para o input*/
+    &:hover {
+        border-color: #7e0000; /*Cor da borda ao passar o mouse por cima*/
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /*Sombra ao passar o mouse por cima*/
+    }
+}
+
+/*Botão de login*/
+.submit-button {
+    background-color: #7e0000; /*Cor de fundo do botão*/
+    border: none; /*Sem borda*/
+    color: white; /*Cor do texto*/
+    padding: 10px 20px; /*Preenchimento do botão*/
+    text-align: center; /*Alinha o texto ao centro*/
+    text-decoration: none; /*Sem decoração*/
+    display: inline-block; /*Alinha o botão lado a lado*/
+    font-size: 16px; /*Tamanho da fonte*/
+    margin: 4px 2px; /*Margem do botão*/
+    cursor: pointer; /*Muda o cursor ao passar o mouse por cima*/
+    border-radius: 4px; /*Bordas arredondadas*/
+    transition: all 0.3s ease; /*Transição para o efeito de hover*/
+
+    /*Efeito de hover para o botão*/
+    &:hover {
+        background-color: #333; /*Cor de fundo ao passar o mouse por cima*/
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /*Sombra ao passar o mouse por cima*/
+    }
+}

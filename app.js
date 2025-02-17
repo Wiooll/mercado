@@ -19,4 +19,8 @@ function limparLista() {
     }
 }
 
-//
+//Lógica para fechar o menu de navegação
+function fecharMenu() {
+    var menu = document.getElementById("menu");
+    menu.style.display = "none";
+}

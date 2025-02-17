@@ -1,12 +1,11 @@
 /*Estilo do menu de navegação*/
 ul {
-    list-style-type: none; /*Tira os marcadores da lista*/
-    margin: 0; /*Margem do menu*/
+    margin-top: 0; /*Margem superior do menu*/;
     padding: 0; /*Preenchimento do menu*/
     overflow: hidden; /*Esconde o conteúdo que ultrapassa a div*/
     background-color: #333; /*Cor de fundo do menu*/
     width: 100%; /*Margem do Menu preenche totalmente horizontalmente*/
-    height: 30px; /*Altura do menu*/
+    height: 50px; /*Altura do menu*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra do menu*/
 }
 
@@ -46,7 +45,7 @@ li a:hover { /*Altera a cor do item ao passar o mouse por cima*/
 
 /*Estilo da lista de itens*/
 #lista {
-    padding: 10px; /*Preenchimento da lista*/
+    padding: 100px; /*Preenchimento da lista*/
     margin: 100px auto; /*Margem da lista*/
     margin-top: 200px;
     border: 1px solid #ccc; /*Borda da lista*/
@@ -58,11 +57,17 @@ li a:hover { /*Altera a cor do item ao passar o mouse por cima*/
     width: 80%; /*Largura da lista*/
     max-width: 600px; /*Largura máxima da lista*/
     text-align: center; /*Alinha o texto ao centro*/
+    list-style: none; /*Remove as bolinhas da lista*/
+    flex-wrap: wrap; /*Quebra os itens da lista quando a largura do container diminui*/
+    justify-content: center; /*Alinha os itens da lista ao centro*/
+    align-items: center; /*Alinha os itens da lista ao centro*/
+    gap: 10px; /*Espaço entre os itens da lista*/
+    display: flex; /*Exibe os itens da lista como flexbox*/
 }
 
 /*Estilo do botão de adicionar a lista*/
 button {
-    background-color: #007e06; /*Cor de fundo do botão*/
+    background-color: #7e0000; /*Cor de fundo do botão*/
     border: none; /*Sem borda*/
     color: white; /*Cor do texto*/
     padding: 10px 20px; /*Preenchimento do botão*/
@@ -87,5 +92,4 @@ footer {
     height: 50px; /*Altura do rodapé*/
     border-top: 1px solid #ccc; /*Borda superior do rodapé*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombra do rodapé*/
-
 }

@@ -1,0 +1,8 @@
+CREATE TABLE usuarios (
+  id INT PRIMARY KEY,
+  login VARCHAR(50) NOT NULL,
+  senha VARCHAR(255) NOT NULL
+);
+
+INSERT INTO usuarios (id, login, senha)
+VALUES (1, 'Adm', '1234');
